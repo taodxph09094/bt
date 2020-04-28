@@ -1,0 +1,46 @@
+
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="/admin/dashboard">Admin</a>
+    </li>
+    <li class="breadcrumb-item active">Product Manager</li>
+  </ol>
+<header class="d-flex mb-3 pt-5 justify-content-between">
+<button routerLink="/admin/add-product" class="btn btn-success">Add Product</button>
+ </header>
+      <table class="table">
+          <thead class="thead-dark">
+              <tr >
+                  <th class="text-center"  scope="col">ID</th>
+        <th class="text-center" scope="col">Name</th>
+                  <th class="text-center" scope="col">PRICE</th>
+                  <th class="text-center" scope="col">STATUS</th>
+        <th class="text-center" scope="col">CPU</th>
+        <th class="text-center" scope="col">RAM</th>
+        <th class="text-center" width="200">HARD DRIVE</th>
+        <th class="text-center" scope="col">VGA</th>
+        <th class="text-center" width="300">ACTION</th>
+              </tr>
+          </thead>
+      <tbody>
+              <tr *ngFor="let p of product | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
+                      <td>{{p.id}}</td>
+                      <td>{{p.name}}</td>
+                      <td>{{p.price}}</td>
+                      <td>{{p.status}}</td>
+          <td>{{p.show4}}</td>
+          <td>{{p.show5}}</td>
+          <td>{{p.show6}}</td>
+          <td>{{p.show7}}</td>
+          <td class="d-flex justify-content-between" >
+            <button routerLink="/admin/show-detail/{{p.id}}" class="btn btn-primary info">Show Detail</button>
+            <button routerLink="/admin/edit-product/{{p.id}}" class="btn btn-info">Edit</button>
+            <button (click)="removeItem(p.id)" class="btn btn-danger ">Delete</button>
+          </td>
+              </tr>
+      </tbody>
+</table>
+<ngb-pagination
+[(page)]="page"
+[pageSize]="pageSize"
+[collectionSize]="product.length"></ngb-pagination>

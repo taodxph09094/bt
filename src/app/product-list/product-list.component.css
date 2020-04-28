@@ -1,0 +1,88 @@
+.brand-slide {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+section {
+    display: block;
+}
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+.con {
+    width: 1210px !important;
+    min-width: 1210px !important;
+    max-width: 1210px !important;
+    padding-right: 10px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.brand-slide .owl-carousel {
+    background-color: #fff;
+    padding: 10px 40px;
+}
+.owl-carousel.owl-loaded {
+    display: block;
+}
+.owl-carousel {
+    width: 100%;
+    z-index: 1;
+}
+.owl-carousel{
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+}
+.brand-slide .owl-carousel .owl-stage {
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+}
+.owl-carousel .owl-stage {
+    position: relative;
+}
+.owl-carousel.owl-drag .owl-item {
+    user-select: none;
+}
+.owl-carousel .owl-item {
+    min-height: 1px;
+    float: left;
+}
+.owl-carousel .owl-item {
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
+.brand-slide .owl-carousel .owl-item a {
+    display: block;
+}
+a {
+    text-decoration: none;
+}
+a, a:hover {
+    text-decoration: none;
+}
+a {
+    color: #007bff;
+    background-color: transparent;
+}
+p {
+  font-family: Lato;
+}
+.bg-dark {
+    background-color: #ff9300!important;
+    font-size: larger;
+}
+.row{
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.hh{
+  margin-right: 70px;
+  margin-top: 70px;
+  margin-left: 70px;
+}
+.pagination{
+  margin-left: 70px;
+}

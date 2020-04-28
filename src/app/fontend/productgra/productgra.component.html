@@ -1,0 +1,15 @@
+<div class="row">
+    <div ngClass="col-lg-4 col-md-6 mb-4" *ngFor="let g of graphics">
+    <div class="card h-100">
+        <a href="/product/{{g.id}}"><img class="card-img-top" [src]="g.img" alt=""></a>
+        <div class="card-body"> 
+          <h4 class="card-title">
+            <a href="#">{{g.name}}</a>
+          </h4>
+          <h5>${{g.price}}</h5>
+          <p class="card-text">{{g.desc}}</p>
+          <p class="card-text">{{g.status }}</p>
+        </div>
+    </div>
+    </div>
+</div>

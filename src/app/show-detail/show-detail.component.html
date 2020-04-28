@@ -1,0 +1,131 @@
+<div class="a12">
+<div class="container" *ngIf="producto">
+  
+    <div class="row" >
+      <div class="col-lg-6" >
+        <img class="img-fluid rounded mb-4" src="{{producto.img}}" alt="">
+      </div>
+      <div class="col-lg-6">
+        <h2>{{producto.name}}</h2>
+       <p> 
+      <b>Tình trạng:</b> {{producto.status}}<br/>
+      <b>Mổ tả: </b>{{producto.show3}}<br/>
+      <b>CPU: </b>{{producto.show4}}<br/>
+      <b>RAM: </b>{{producto.show5}}<br/>
+      <b>Ổ cứng: </b>{{producto.show6}}<br/>
+      <b>VGA: </b>{{producto.show7}}<br/>
+      <p><b>Giá: </b>$ {{producto.price}}<br/>
+    </p>
+    <button class="btn btn-success">Buy</button>
+      </div>
+    </div>
+    <h2>Sản phẩm liên quan</h2>
+    <div class="row">
+      <app-productoff></app-productoff>
+    </div>
+  </div>
+  
+  <div class="container" *ngIf="graphics">
+    <h1 class="mt-4 mb-3">
+    </h1>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="breadcrumb-item active">About</li>
+    </ol>
+    <div class="row" >
+      <div class="col-lg-6" >
+        <img class="img-fluid rounded mb-4" src="{{graphics.img}}" alt="">
+      </div>
+      <div class="col-lg-6">
+        <h2>{{graphics.name}}</h2>
+       <p>      
+<b>Tình trạng:</b> {{graphics.status}}<br/>
+<b>Mổ tả: </b>{{graphics.show3}}<br/>
+<b>CPU: </b>{{graphics.show4}}<br/>
+<b>RAM: </b>{{graphics.show5}}<br/>
+<b>Ổ cứng: </b>{{graphics.show6}}<br/>
+<b>VGA: </b>{{graphics.show7}}<br/>
+<b>Giá: </b>$ {{graphics.price}}<br/>
+    </p>
+    <button class="btn btn-success">Buy</button>
+      </div>
+    </div>
+    <h2>Sản phẩm liên quan</h2>
+    <div class="row">
+      <app-productgra></app-productgra>
+    </div>
+  </div>
+
+    <div class="container" *ngIf="gamings">
+    <h1 class="mt-4 mb-3">
+    </h1>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="breadcrumb-item active">About</li>
+    </ol>
+    <div class="row" >
+      <div class="col-lg-6" >
+        <img class="img-fluid rounded mb-4" src="{{gamings.img}}" alt="">
+      </div>
+      <div class="col-lg-6">
+        <h2>{{gamings.name}}</h2>
+       <p>      
+<b>Tình trạng:</b> {{gamings.status}}<br/>
+<b>Mổ tả: </b>{{gamings.show3}}<br/>
+<b>CPU: </b>{{gamings.show4}}<br/>
+<b>RAM: </b>{{gamings.show5}}<br/>
+<b>Ổ cứng: </b>{{gamings.show6}}<br/>
+<b>VGA: </b>{{gamings.show7}}<br/>
+<b>Giá: </b>$ {{gamings.price}}<br/>
+    </p>
+    <button class="btn btn-success">Buy</button>
+      </div>
+    </div>
+    <h2>Sản phẩm liên quan</h2>
+    <div class="row">
+      <app-productgame></app-productgame>
+    </div>
+  </div>
+
+  <div class="container" *ngIf="luxurys">
+    <h1 class="mt-4 mb-3">
+    </h1>
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="breadcrumb-item active">About</li>
+    </ol>
+    <div class="row" >
+      <div class="col-lg-6" >
+        <img class="img-fluid rounded mb-4" src="{{luxurys.img}}" alt="">
+      </div>
+      <div class="col-lg-6">
+        <h2>{{luxurys.name}}</h2>
+       <p>      
+<b>Tình trạng:</b> {{luxurys.status}}<br/>
+<b>Mổ tả: </b>{{luxurys.show3}}<br/>
+<b>CPU: </b>{{luxurys.show4}}<br/>
+<b>RAM: </b>{{luxurys.show5}}<br/>
+<b>Ổ cứng: </b>{{luxurys.show6}}<br/>
+<b>VGA: </b>{{luxurys.show7}}<br/>
+<b>Giá: </b>$ {{luxurys.price}}<br/>
+    </p>
+    <button class="btn btn-success">Buy</button>
+      </div>
+    </div>
+    <h2>Sản phẩm liên quan</h2>
+    <div class="row">
+      <app-productlux></app-productlux>
+    </div>
+  </div>
+</div>
+<footer class="py-5 bg-dark">
+  <div class="container">
+    <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+  </div>
+</footer>

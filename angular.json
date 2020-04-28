@@ -24,6 +24,12 @@
               "src/assets"
             ],
             "styles": [
+              "src/assets/css/modern-business.css",
+              "src/assets/css/hover.css",
+              "src/assets/css/bootstrap.css",
+              "src/assets/css/font-awesome.css",
+              "src/assets/css/style1.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -119,6 +125,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "abm"
+    }
+  },
+  "defaultProject": "abm",
+  "cli": {
+    "analytics": false
+  }
 }

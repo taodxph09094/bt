@@ -1,0 +1,26 @@
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="/admin/dashboard">Admin</a>
+    </li>
+    <li class="breadcrumb-item active">Add product</li>
+  </ol>
+  <h2 class="text-center"> Add Product</h2>
+  <form class="w-50 mx-auto mt-3">
+    <div class="form-group">
+      <!-- <label for=""> {{address}}</label> -->
+      <input type="number" name="id" class="form-control"placeholder="Product ID" [(ngModel)]="pr.id">
+      <input type="text" name="name" class="form-control"placeholder="Product Name" [(ngModel)]="pr.name">
+      <input type="number" name="price" class="form-control"placeholder="Price" [(ngModel)]="pr.price">
+      <input type="text" name="desc" class="form-control"placeholder="Describe" [(ngModel)]="pr.desc">
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="addPr()">Submit</button>
+  </form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br><br><br><br><br><br><br><br>

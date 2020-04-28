@@ -1,0 +1,31 @@
+<ol class="breadcrumb">
+    <li class="breadcrumb-item">
+      <a href="/admin/dashboard">Admin</a>
+    </li>
+    <li class="breadcrumb-item active">Edit product</li>
+  </ol>
+<h2 class="text-center"> Update Product</h2>
+<form *ngIf="pr">
+<div class="form-group">
+  <!-- <label for=""> {{address}}</label> -->
+  <input type="text" name="name" class="form-control"placeholder="Product Name" [(ngModel)]="pr.name">
+  <input type="number" name="price" class="form-control"placeholder="Price" [(ngModel)]="pr.price">
+  <input type="text" name="desc" class="form-control"placeholder="Describe" [(ngModel)]="pr.desc">
+  <input type="text" name="status" class="form-control"placeholder="Status" [(ngModel)]="pr.status">
+  <input type="text" name="show3" class="form-control"placeholder="Mota" [(ngModel)]="pr.show3">
+  <input type="text" name="show4" class="form-control"placeholder="CPU" [(ngModel)]="pr.show4">
+  <input type="text" name="show5" class="form-control"placeholder="RAM" [(ngModel)]="pr.show5">
+  <input type="text" name="show6" class="form-control"placeholder="HardDrive" [(ngModel)]="pr.show6">
+  <input type="text" name="show7" class="form-control"placeholder="VGA" [(ngModel)]="pr.show7">
+</div>
+<button type="submit" class="btn btn-primary" (click)="updatePr()">Save</button>
+</form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br><br><br><br><br><br><br><br><br>

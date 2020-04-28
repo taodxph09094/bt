@@ -1,0 +1,39 @@
+<header class="d-flex mb-3 pt-5 justify-content-between">
+	<h2 class="text-center"> List products</h2>
+  <div class="col">
+    <div ngbDropdown class="d-inline-block">
+      <button class="btn btn-outline-primary" id="type" ngbDropdownToggle>Thể Loại</button>
+      <div ngbDropdownMenu aria-labelledby="type">
+        <a href="/office"><button ngbDropdownItem >Văn phòng</button></a>
+        <a href="/graphics"><button ngbDropdownItem >Đồ họa</button></a>
+        <a href="/gaming"><button ngbDropdownItem>Gaming</button></a>
+        <a href="/luxury"><button ngbDropdownItem>Luxury</button></a>
+      </div>
+    </div>
+  </div>
+  <div class="search-box">
+									<label>Search Name</label>
+                  <input type="text" name ="country" id = "country" ng-model="country" ng-keyup="complete(country)" class="form-control"/>
+								</div>
+   </header>
+   <div class="row">
+    <div ngClass="col-lg-4 col-md-6 mb-4" *ngFor="let p of product | slice: (page-1) * pageSize : (page-1) * pageSize + pageSize">
+    <div class="card h-100">
+        <a href="/product/{{p.id}}"><img class="card-img-top" [src]="p.img" alt=""></a>
+        <div class="card-body"> 
+          <h4 class="card-title">
+            <a href="#">{{p.name}}</a>
+          </h4>
+          <h5>${{p.price}}</h5>
+          <p class="card-text">{{p.desc}}</p>
+          <p class="card-text">{{p.status }}</p>
+        </div>
+    </div>
+    </div>
+     </div>
+     <div class="pagination">
+    <ngb-pagination
+  [(page)]="page"
+  [pageSize]="pageSize"
+  [collectionSize]="product.length"></ngb-pagination>
+     </div>
